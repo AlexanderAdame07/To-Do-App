@@ -18,9 +18,9 @@ document.querySelector('#push').onclick = function(){
       </i></button>
 
       <input type="checkbox" class ="finished" style="font-size:12px"><i class="fa fa-toggle-off">
-      </i></checkbox>
+      </i></input>
       </div>`;
-      
+
   var current_tasks = document.querySelectorAll(".delete");
     for(var i=0; i<current_tasks.length; i++){
       current_tasks[i].onclick = function(){
@@ -28,11 +28,11 @@ document.querySelector('#push').onclick = function(){
       }
     }
 
-  var strike_tasks = document.querySelectorAll(".finished");
+    var strike_tasks = document.querySelectorAll(".finished");
     for(var i=0; i<strike_tasks.length; i++){
-      strike_tasks[i].onclick = function(){
-      this.parentElement.style.setProperty("text-decoration", "line-through");
-      }
+      strike_tasks[i].onclick = function myFunction(){
+        this.parentElement.classList.toggle("mystyle");
+     }
     }
   }
 }

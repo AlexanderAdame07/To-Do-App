@@ -6,3 +6,7 @@ header{
   font-size: larger;
   padding: 20px;
 }
+
+.mystyle {
+  text-decoration: line-through;
+}
